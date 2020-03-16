@@ -1,11 +1,25 @@
-<hr>
-<p><a [routerLink]="[ '' ]">home</a></p>
-<p><a [routerLink]="[ '/signup' ]">signup</a></p>
-<p><a [routerLink]="[ '/signin' ]">signin</a></p>
-<p><a [routerLink]="[ '/private' ]">private home</a></p>
-<p-menubar [model]="items">
-    <div>
-        <input type="text" pInputText placeholder="Search">
-        <button pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em"></button>
-    </div>
-</p-menubar>
+<div class="layout-topbar">
+  <!-- <p><a [routerLink]="['']">home</a></p>
+    <p><a [routerLink]="['/signup']">signup</a></p>
+    <p><a [routerLink]="['/signin']">signin</a></p>
+    <p><a [routerLink]="['/private']">private home</a></p> -->
+  <div fxLayout="row" fxLayoutAlign="end center" class="h-100">
+    <div fxFlexOffset.xs="0%" fxFlexOffset="10%"></div>
+    <img
+      class="main-logo-resize"
+      src="https://via.placeholder.com/200x50"
+      alt="logo"
+    />
+    <span class="spacer"></span>
+    <button
+      [routerLink]="['/signin']"
+      pButton
+      label="Sign in"
+      style="margin-left:.25em"
+    ></button>
+    <div fxFlexOffset.xs="0%" fxFlexOffset="10%"></div>
+  </div>
+
+  </div>
+  <div>
+</div>
