@@ -3,23 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
-import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
-import { PublicModule } from './public/public.module';
+import { MainComponent } from './main/main.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SharedModule } from './shared/shared.module';
+import { SigninComponent } from './signin/signin.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    HomeComponent
+    HomeComponent,
+    SigninComponent,
+    SignupComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
-    PublicModule,
     AppRoutingModule
   ],
   providers: [],

@@ -1,0 +1,11 @@
+<hr>
+<p><a [routerLink]="[ '' ]">home</a></p>
+<p><a [routerLink]="[ '/signup' ]">signup</a></p>
+<p><a [routerLink]="[ '/signin' ]">signin</a></p>
+<p><a [routerLink]="[ '/private' ]">private home</a></p>
+<p-menubar [model]="items">
+    <div>
+        <input type="text" pInputText placeholder="Search">
+        <button pButton label="Logout" icon="pi pi-power-off" style="margin-left:.25em"></button>
+    </div>
+</p-menubar>
