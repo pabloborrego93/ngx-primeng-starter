@@ -9,6 +9,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { ForbiddenComponent } from './forbidden/forbidden.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SidebarModule } from 'primeng/sidebar';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CodeHighlighterModule,
     MenubarModule,
     InputTextModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SidebarModule
   ],
   exports: [
     ButtonModule,
@@ -28,7 +30,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CodeHighlighterModule,
     MenubarModule,
     InputTextModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SidebarModule
   ]
 })
 export class SharedModule { }

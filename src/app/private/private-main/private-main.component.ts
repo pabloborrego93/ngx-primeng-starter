@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivateMainComponent implements OnInit {
 
+  showSideNav = false;
+
   constructor() { }
 
   ngOnInit(): void {

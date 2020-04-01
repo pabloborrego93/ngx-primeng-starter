@@ -1,29 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '../node_modules/primeicons/primeicons.css';
-@import '../node_modules/primeng/resources/primeng.min.css';
-@import '../node_modules/primeng/resources/themes/nova-colored/theme.css';
+@import "../node_modules/primeicons/primeicons.css";
+@import "../node_modules/primeng/resources/primeng.min.css";
+@import "../node_modules/primeng/resources/themes/nova-colored/theme.css";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-.body {
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .h-100 {
-    height: 100%;
+  height: 100%;
 }
 
 .w-100 {
+  width: 100%;
+}
+
+.layout-topbar {
+  background-color: #20272a;
+  display: block;
+  padding: 0;
+  height: 70px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99997;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.topbar-spacing {
+  height: 70px;
+}
+
+.outlet-container {
     width: 100%;
+    height: 100vh;
+}
+
+.container {
+    padding: 16px;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.ui-sidebar.ui-sidebar-left {
+    margin-top: 70px !important;
+    overflow-y: auto;
+    background-color: whitesmoke;
+    transition: all 0.5s;
+    height: 100vh;
 }

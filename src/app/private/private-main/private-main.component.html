@@ -1,7 +1,27 @@
-<p>private works!</p>
-<p><a [routerLink]="[ '/private' ]">private</a></p>
-<p><a [routerLink]="[ '/private/profile' ]">my-profile</a></p>
-<p><a [routerLink]="[ '/private/test1' ]">test1</a></p>
-<p><a [routerLink]="[ '/private/test2' ]">test2</a></p>
-<p><a [routerLink]="[ '/private/test3' ]">test3 (not existing)</a></p>
-<router-outlet></router-outlet>
+<div class="topbar-spacing"></div>
+<div #container class="container">
+    <div class="layout-topbar" fxLayout="row" fxLayoutAlign="start center">
+      <button
+        pButton
+        type="button"
+        (click)="showSideNav = !showSideNav"
+        icon="pi pi-bars"
+      ></button>
+    </div>
+    <div #outlet class="outlet-container">
+        <p-sidebar 
+          [(visible)]="showSideNav"
+          [baseZIndex]="10000"
+          [showCloseIcon]="false"
+          [closeOnEscape]="true"
+          [appendTo]="outlet"
+        >
+            <p><a (click)="showSideNav = false" [routerLink]="[ '/private' ]">private</a></p>
+            <p><a (click)="showSideNav = false" [routerLink]="[ '/private/profile' ]">my-profile</a></p>
+            <p><a (click)="showSideNav = false" [routerLink]="[ '/private/test1' ]">test1</a></p>
+            <p><a (click)="showSideNav = false" [routerLink]="[ '/private/test2' ]">test2</a></p>
+            <p><a (click)="showSideNav = false" [routerLink]="[ '/private/test3' ]">test3 (not existing)</a></p>
+        </p-sidebar>
+        <router-outlet></router-outlet>
+    </div>
+</div>
